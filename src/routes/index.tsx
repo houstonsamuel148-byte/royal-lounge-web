@@ -488,7 +488,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Trendy Royal Hotel & Lounge. Where every guest is treated like royalty. TEST
+        © {new Date().getFullYear()} Trendy Royal Hotel & Lounge. Where every guest is treated like royalty.
       </div>
     </footer>
   );
