@@ -16,6 +16,7 @@ import photo8 from "@/assets/trendy-royal-8.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
+import logo from "@/assets/trendy-royal-logo.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
