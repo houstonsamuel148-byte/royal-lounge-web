@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-display: "Cormorant Garamond", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-display: "Times New Roman", Times, serif;
+  --font-sans: "Times New Roman", Times, serif;
   --color-gold: oklch(0.78 0.13 85);
   --color-gold-deep: oklch(0.62 0.14 80);
   --color-lilac: oklch(0.88 0.05 310);
@@ -155,7 +155,7 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 }
 

@@ -5,13 +5,14 @@ import {
   Zap, Gamepad2, Wifi, ShieldCheck, Car, Sparkles, Phone, Mail,
   MapPin, MessageCircle, Facebook, Crown, Check, ChevronDown, Star,
 } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
-import roomImg from "@/assets/room.jpg";
-import diningImg from "@/assets/dining.jpg";
-import loungeImg from "@/assets/lounge.jpg";
-import eventImg from "@/assets/event.jpg";
-import snookerImg from "@/assets/snooker.jpg";
-import lobbyImg from "@/assets/lobby.jpg";
+import photo1 from "@/assets/trendy-royal-1.jpeg";
+import photo2 from "@/assets/trendy-royal-2.jpeg";
+import photo3 from "@/assets/trendy-royal-3.png";
+import photo4 from "@/assets/trendy-royal-4.png";
+import photo5 from "@/assets/trendy-royal-5.png";
+import photo6 from "@/assets/trendy-royal-6.jpeg";
+import photo7 from "@/assets/trendy-royal-7.jpeg";
+import photo8 from "@/assets/trendy-royal-8.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -139,7 +140,7 @@ function Hero() {
             <ContactForm />
           </div>
           <div className="relative mt-4 h-32 rounded-2xl overflow-hidden border border-border">
-            <img src={heroImg} alt="Trendy Royal Hotel lobby" className="size-full object-cover" width={1600} height={1024} />
+            <img src={photo1} alt="Trendy Royal Hotel & Lounge" className="size-full object-cover" width={1600} height={1024} />
           </div>
         </div>
       </div>
@@ -223,9 +224,9 @@ function Services() {
 }
 
 const rooms = [
-  { name: "Standard Room", price: "₦10,000", per: "per night", img: roomImg, perks: ["Air-conditioned", "Free Wi-Fi", "24h power"] },
-  { name: "Executive Room", price: "₦20,000", per: "per night", img: lobbyImg, perks: ["Premium bedding", "Workspace", "Lounge access"], featured: true },
-  { name: "Platinum Room", price: "₦30,000", per: "per night", img: eventImg, perks: ["Spacious suite", "VIP amenities", "Priority service"] },
+  { name: "Standard Room", price: "₦10,000", per: "per night", img: photo2, perks: ["Air-conditioned", "Free Wi-Fi", "24h power"] },
+  { name: "Executive Room", price: "₦20,000", per: "per night", img: photo3, perks: ["Premium bedding", "Workspace", "Lounge access"], featured: true },
+  { name: "Platinum Room", price: "₦30,000", per: "per night", img: photo4, perks: ["Spacious suite", "VIP amenities", "Priority service"] },
 ];
 
 function Rooms() {
@@ -289,7 +290,7 @@ function WhyUs() {
       <div className="mx-auto max-w-7xl px-5 grid lg:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-gold/30 via-lilac/30 to-transparent blur-2xl" aria-hidden />
-          <img src={loungeImg} alt="Premium lounge" loading="lazy" width={1024} height={1024} className="relative rounded-3xl object-cover w-full aspect-square shadow-royal" />
+          <img src={photo5} alt="Premium lounge" loading="lazy" width={1024} height={1024} className="relative rounded-3xl object-cover w-full aspect-square shadow-royal" />
         </div>
         <div>
           <span className="text-xs uppercase tracking-widest text-gold-deep">Why Choose Us</span>
@@ -320,11 +321,14 @@ function WhyUs() {
 }
 
 const galleryItems = [
-  { src: heroImg, alt: "Grand lounge interior", cls: "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" },
-  { src: roomImg, alt: "Luxury room", cls: "aspect-square" },
-  { src: diningImg, alt: "Fine dining plate", cls: "aspect-square" },
-  { src: eventImg, alt: "Event hall set up", cls: "aspect-square" },
-  { src: snookerImg, alt: "Snooker games room", cls: "aspect-square" },
+  { src: photo1, alt: "Trendy Royal Hotel & Lounge", cls: "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" },
+  { src: photo2, alt: "Trendy Royal room", cls: "aspect-square" },
+  { src: photo3, alt: "Trendy Royal interior", cls: "aspect-square" },
+  { src: photo4, alt: "Trendy Royal hospitality", cls: "aspect-square" },
+  { src: photo5, alt: "Trendy Royal lounge", cls: "aspect-square" },
+  { src: photo6, alt: "Trendy Royal ambience", cls: "aspect-square" },
+  { src: photo7, alt: "Trendy Royal guest area", cls: "aspect-square" },
+  { src: photo8, alt: "Trendy Royal facilities", cls: "aspect-square" },
 ];
 
 function Gallery() {
@@ -392,7 +396,7 @@ function FinalCTA() {
   return (
     <section className="py-24 px-5">
       <div className="relative mx-auto max-w-6xl rounded-[2rem] overflow-hidden">
-        <img src={heroImg} alt="" aria-hidden className="absolute inset-0 size-full object-cover" />
+        <img src={photo8} alt="" aria-hidden className="absolute inset-0 size-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-ink/85 via-plum/70 to-ink/85" />
         <div className="relative px-6 md:px-16 py-20 md:py-28 text-center">
           <Crown className="mx-auto size-10 text-gold" />
