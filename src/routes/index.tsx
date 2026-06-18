@@ -66,6 +66,7 @@ function Nav() {
             width={200}
             height={40}
           />
+          <span className="font-display text-lg font-semibold tracking-tight">Trendy Royal</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#services" className="hover:text-foreground transition">Services</a>
