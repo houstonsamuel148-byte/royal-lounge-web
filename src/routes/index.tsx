@@ -429,6 +429,25 @@ function FinalCTA() {
   );
 }
 
+function LogoSection() {
+  return (
+    <section className="py-16 bg-royal border-t border-border">
+      <div className="mx-auto max-w-7xl px-5 flex flex-col items-center text-center">
+        <img
+          src={logo.url}
+          alt="Trendy Royal Hotel & Lounge Logo"
+          className="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-royal"
+          width={400}
+          height={400}
+        />
+        <p className="mt-6 text-muted-foreground text-sm max-w-md">
+          Luxury • Comfort • Relaxation • Entertainment
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-border bg-card">
