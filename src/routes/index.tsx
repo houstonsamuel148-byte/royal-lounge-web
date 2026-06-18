@@ -16,6 +16,7 @@ import photo8 from "@/assets/trendy-royal-8.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
+import logo from "@/assets/trendy-royal-logo.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,6 +49,7 @@ function Index() {
       <Gallery />
       <FAQ />
       <FinalCTA />
+      <LogoSection />
       <Footer />
     </div>
   );
@@ -422,6 +424,25 @@ function FinalCTA() {
             <span className="ml-2 text-xs text-background/70">Loved by guests across Ogun State</span>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function LogoSection() {
+  return (
+    <section className="py-16 bg-royal border-t border-border">
+      <div className="mx-auto max-w-7xl px-5 flex flex-col items-center text-center">
+        <img
+          src={logo.url}
+          alt="Trendy Royal Hotel & Lounge Logo"
+          className="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-royal"
+          width={400}
+          height={400}
+        />
+        <p className="mt-6 text-muted-foreground text-sm max-w-md">
+          Luxury • Comfort • Relaxation • Entertainment
+        </p>
       </div>
     </section>
   );
