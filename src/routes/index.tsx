@@ -160,11 +160,11 @@ function Hero() {
 
 function ContactForm() {
   const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({ name: "", phone: "", date: "", room: "Executive Room", message: "" });
+  const [form, setForm] = useState({ name: "", phone: "", date: "", checkout: "", room: "Executive Room", message: "" });
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    const text = `Hello Trendy Royal! I'd like to book.%0A%0AName: ${form.name}%0APhone: ${form.phone}%0ACheck-in: ${form.date}%0ARoom: ${form.room}%0ANotes: ${form.message}`;
+    const text = `Hello Trendy Royal! I'd like to book.%0A%0AName: ${form.name}%0APhone: ${form.phone}%0ACheck-in: ${form.date}%0ACheck-out: ${form.checkout}%0ARoom: ${form.room}%0ANotes: ${form.message}`;
     window.open(`${WHATSAPP}?text=${text}`, "_blank");
     setSent(true);
   }
