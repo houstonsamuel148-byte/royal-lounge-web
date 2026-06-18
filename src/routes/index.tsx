@@ -49,7 +49,6 @@ function Index() {
       <Gallery />
       <FAQ />
       <FinalCTA />
-      <LogoSection />
       <Footer />
     </div>
   );
@@ -58,10 +57,15 @@ function Index() {
 function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
-      <div className="mx-auto max-w-7xl flex items-center justify-between px-5 py-4">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-5 py-3">
         <a href="#top" className="flex items-center gap-2">
-          <Crown className="size-5 text-primary" />
-          <span className="font-display text-lg font-semibold tracking-tight">Trendy Royal</span>
+          <img
+            src={logo.url}
+            alt="Trendy Royal Hotel & Lounge"
+            className="h-10 w-auto object-contain"
+            width={200}
+            height={40}
+          />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#services" className="hover:text-foreground transition">Services</a>
@@ -429,24 +433,6 @@ function FinalCTA() {
   );
 }
 
-function LogoSection() {
-  return (
-    <section className="py-16 bg-royal border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 flex flex-col items-center text-center">
-        <img
-          src={logo.url}
-          alt="Trendy Royal Hotel & Lounge Logo"
-          className="w-48 h-48 md:w-64 md:h-64 object-contain rounded-full shadow-royal"
-          width={400}
-          height={400}
-        />
-        <p className="mt-6 text-muted-foreground text-sm max-w-md">
-          Luxury • Comfort • Relaxation • Entertainment
-        </p>
-      </div>
-    </section>
-  );
-}
 
 function Footer() {
   return (
