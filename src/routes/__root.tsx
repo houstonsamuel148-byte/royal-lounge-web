@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Luxury rooms, fine dining, VIP lounge and event hosting in Adiyan, Ogun State. Book your royal stay at Trendy Royal Hotel & Lounge today." },
       { name: "author", content: "Trendy Royal Hotel & Lounge" },
       { property: "og:title", content: "Trendy Royal Hotel & Lounge — Live the Royal Experience" },
-      { property: "og:description", content: "Luxury rooms, fine dining, VIP lounge and event hosting. Where every guest is treated like royalty." },
+      { property: "og:description", content: "Luxury rooms, fine dining, VIP lounge and event hosting in Adiyan, Ogun State. Book your royal stay at Trendy Royal Hotel & Lounge today." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Trendy Royal Hotel & Lounge — Live the Royal Experience" },
+      { name: "twitter:description", content: "Luxury rooms, fine dining, VIP lounge and event hosting in Adiyan, Ogun State. Book your royal stay at Trendy Royal Hotel & Lounge today." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fff5641e-15e4-4f93-94e0-ac0f00d65291/id-preview-7d79468a--35acb482-a05d-43a7-b3ba-ef2a96f3ce74.lovable.app-1781802586348.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fff5641e-15e4-4f93-94e0-ac0f00d65291/id-preview-7d79468a--35acb482-a05d-43a7-b3ba-ef2a96f3ce74.lovable.app-1781802586348.png" },
     ],
     links: [
       {
