@@ -177,13 +177,14 @@ function ContactForm() {
       <input required type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="Phone number" className={field} />
       <div className="grid grid-cols-2 gap-3">
         <input required type="date" value={form.date} onChange={(e) => setForm({ ...form, date: e.target.value })} className={field} />
-        <select value={form.room} onChange={(e) => setForm({ ...form, room: e.target.value })} className={field}>
-          <option>Standard Room — ₦10,000</option>
-          <option>Executive Room — ₦20,000</option>
-          <option>Platinum Room — ₦30,000</option>
-          <option>Event / Lounge Booking</option>
-        </select>
+        <input required type="date" value={form.checkout} onChange={(e) => setForm({ ...form, checkout: e.target.value })} className={field} />
       </div>
+      <select value={form.room} onChange={(e) => setForm({ ...form, room: e.target.value })} className={field}>
+        <option>Standard Room — ₦10,000</option>
+        <option>Executive Room — ₦20,000</option>
+        <option>Platinum Room — ₦30,000</option>
+        <option>Event / Lounge Booking</option>
+      </select>
       <textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Any special requests?" rows={3} className={field} />
       <button type="submit" className="w-full rounded-xl bg-gradient-to-r from-gold-deep to-gold px-5 py-3 text-sm font-semibold text-primary-foreground shadow-royal hover:opacity-95 transition">
         {sent ? "Sent — we'll be in touch ✓" : "Send booking request"}
