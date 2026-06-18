@@ -13,6 +13,9 @@ import photo5 from "@/assets/trendy-royal-5.png.asset.json";
 import photo6 from "@/assets/trendy-royal-6.jpeg.asset.json";
 import photo7 from "@/assets/trendy-royal-7.jpeg.asset.json";
 import photo8 from "@/assets/trendy-royal-8.jpeg.asset.json";
+import roomStandard from "@/assets/room-standard.jpeg.asset.json";
+import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
+import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -224,9 +227,9 @@ function Services() {
 }
 
 const rooms = [
-  { name: "Standard Room", price: "₦10,000", per: "per night", img: photo2.url, perks: ["Air-conditioned", "Free Wi-Fi", "24h power"] },
-  { name: "Executive Room", price: "₦20,000", per: "per night", img: photo3.url, perks: ["Premium bedding", "Workspace", "Lounge access"], featured: true },
-  { name: "Platinum Room", price: "₦30,000", per: "per night", img: photo4.url, perks: ["Spacious suite", "VIP amenities", "Priority service"] },
+  { name: "Standard Room", price: "₦10,000", per: "per night", img: roomStandard.url, perks: ["Air-conditioned", "Free Wi-Fi", "24h power"] },
+  { name: "Executive Room", price: "₦20,000", per: "per night", img: roomExecutive.url, perks: ["Premium bedding", "Workspace", "Lounge access"], featured: true },
+  { name: "Platinum Room", price: "₦30,000", per: "per night", img: roomPlatinum.url, perks: ["Spacious suite", "VIP amenities", "Priority service"] },
 ];
 
 function Rooms() {
