@@ -13,6 +13,11 @@ import photo5 from "@/assets/trendy-royal-5.png.asset.json";
 import photo6 from "@/assets/trendy-royal-6.jpeg.asset.json";
 import photo7 from "@/assets/trendy-royal-7.jpeg.asset.json";
 import photo8 from "@/assets/trendy-royal-8.jpeg.asset.json";
+import photo9 from "@/assets/gallery-9.jpg.asset.json";
+import photo10 from "@/assets/gallery-10.jpg.asset.json";
+import photo11 from "@/assets/gallery-11.jpg.asset.json";
+import photo12 from "@/assets/gallery-12.jpg.asset.json";
+import photo13 from "@/assets/gallery-13.jpg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
@@ -339,6 +344,11 @@ const galleryItems = [
   { src: photo6.url, alt: "Trendy Royal ambience", cls: "aspect-square" },
   { src: photo7.url, alt: "Trendy Royal guest area", cls: "aspect-square" },
   { src: photo8.url, alt: "Trendy Royal facilities", cls: "aspect-square" },
+  { src: photo9.url, alt: "Trendy Royal suite", cls: "aspect-square" },
+  { src: photo10.url, alt: "Trendy Royal bedroom", cls: "aspect-square" },
+  { src: photo11.url, alt: "Trendy Royal rooms showcase", cls: "aspect-square" },
+  { src: photo12.url, alt: "Trendy Royal executive room", cls: "aspect-square" },
+  { src: photo13.url, alt: "Trendy Royal comfort", cls: "aspect-square" },
 ];
 
 function Gallery() {
