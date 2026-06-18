@@ -49,6 +49,7 @@ function Index() {
       <Gallery />
       <FAQ />
       <FinalCTA />
+      <LogoSection />
       <Footer />
     </div>
   );
