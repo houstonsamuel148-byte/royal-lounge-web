@@ -5,3 +5,12 @@
 [dev]
   command = "vite dev"
   port = 3000
+
+# Lovable-hosted assets (images, fonts, etc.) are served from the Lovable CDN
+# under /__l5e/assets-v1/*. When deploying to Netlify, proxy those requests to
+# the Lovable CDN so <img src="/__l5e/..."> keeps working.
+[[redirects]]
+  from = "/__l5e/*"
+  to = "https://royal-lounge-web.lovable.app/__l5e/:splat"
+  status = 200
+  force = true
