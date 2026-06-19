@@ -374,7 +374,7 @@ function Gallery() {
 }
 
 const faqs = [
-  { q: "Where exactly is Trendy Royal Hotel & Lounge located?", a: "We are at No 6 Idowu Ogunsanta, Adiyan Gasline, Ibara Entrance. Tap the location pin in the contact section for live directions." },
+  { q: "Where exactly is Trendy Royal Hotel & Lounge located?", a: "We are at 6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE. Tap the location pin in the contact section for live directions." },
   { q: "What are your room rates?", a: "Standard Rooms from ₦10,000, Executive Rooms ₦20,000 and our Platinum Rooms at ₦30,000 per night — all with AC, Wi-Fi and 24-hour power." },
   { q: "Do you host events and parties?", a: "Yes! We host birthdays, meetings, weddings and private celebrations in our elegant event space. Reach out for a custom package." },
   { q: "Is there 24-hour power and security?", a: "Absolutely. We provide uninterrupted 24-hour power supply, professional security and 24/7 customer service." },
