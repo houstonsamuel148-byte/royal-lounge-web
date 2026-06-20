@@ -40,7 +40,6 @@ const PHONE_2 = "+2349162844419";
 const EMAIL = "Trendyroyalhotel@gmail.com";
 const WHATSAPP = "https://wa.me/9162844419";
 const FACEBOOK = "https://www.facebook.com/share/p/1VwsFMrh77/";
-const TIKTOK = "https://vt.tiktok.com/ZSQvQHcXu/";
 const MAPS = "https://maps.app.goo.gl/xZniCqkiSpGbDrKL7";
 const ADDRESS = "6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE";
 
@@ -459,10 +458,8 @@ function Footer() {
             Your home of comfort. Luxury • Comfort • Relaxation • Entertainment.
           </p>
           <div className="mt-5 flex gap-3">
-            <a href={TIKTOK} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="TikTok">
-              <svg className="size-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52V7.31a4.85 4.85 0 0 1-1.04-.62z" />
-              </svg>
+            <a href={FACEBOOK} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="Facebook">
+              <Facebook className="size-4" />
             </a>
             <a href={WHATSAPP} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="WhatsApp">
               <MessageCircle className="size-4" />
