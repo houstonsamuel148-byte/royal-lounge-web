@@ -40,6 +40,8 @@ const PHONE_2 = "+2349162844419";
 const EMAIL = "Trendyroyalhotel@gmail.com";
 const WHATSAPP = "https://wa.me/9162844419";
 const FACEBOOK = "https://www.facebook.com/share/p/1VwsFMrh77/";
+const INSTAGRAM = "https://www.instagram.com/trendyroyalhotel/";
+const TIKTOK = "https://vt.tiktok.com/ZSQvQHcXu/";
 const MAPS = "https://maps.app.goo.gl/xZniCqkiSpGbDrKL7";
 const ADDRESS = "6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE";
 
@@ -55,6 +57,7 @@ function Index() {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
@@ -457,29 +460,19 @@ function Footer() {
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">
             Your home of comfort. Luxury • Comfort • Relaxation • Entertainment.
           </p>
-          <div className="mt-5 flex gap-3">
-            <a href={FACEBOOK} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="Facebook">
-              <Facebook className="size-4" />
-            </a>
-            <a href={WHATSAPP} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="WhatsApp">
-              <MessageCircle className="size-4" />
-            </a>
-            <a href={MAPS} target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border flex items-center justify-center hover:bg-secondary transition" aria-label="Google Maps">
-              <MapPin className="size-4" />
-            </a>
-          </div>
+          <SocialLinks />
         </div>
         <div>
-          <div className="text-sm font-semibold mb-3">Contact</div>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href={`tel:${PHONE_1}`} className="hover:text-foreground flex items-center gap-2"><Phone className="size-3.5" /> {PHONE_1}</a></li>
-            <li><a href={`tel:${PHONE_2}`} className="hover:text-foreground flex items-center gap-2"><Phone className="size-3.5" /> {PHONE_2}</a></li>
-            <li><a href={`mailto:${EMAIL}`} className="hover:text-foreground flex items-center gap-2"><Mail className="size-3.5" /> {EMAIL}</a></li>
+          <div className="text-sm font-bold text-foreground mb-3">Contact</div>
+          <ul className="space-y-2 text-sm font-bold text-foreground">
+            <li><a href={`tel:${PHONE_1}`} className="hover:text-gold-deep flex items-center gap-2"><Phone className="size-3.5" /> {PHONE_1}</a></li>
+            <li><a href={`tel:${PHONE_2}`} className="hover:text-gold-deep flex items-center gap-2"><Phone className="size-3.5" /> {PHONE_2}</a></li>
+            <li><a href={`mailto:${EMAIL}`} className="hover:text-gold-deep flex items-center gap-2"><Mail className="size-3.5" /> {EMAIL}</a></li>
           </ul>
         </div>
         <div>
-          <div className="text-sm font-semibold mb-3">Visit Us</div>
-          <a href={MAPS} target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground flex items-start gap-2">
+          <div className="text-sm font-bold text-foreground mb-3">Visit Us</div>
+          <a href={MAPS} target="_blank" rel="noreferrer" className="text-sm font-bold text-foreground hover:text-gold-deep flex items-start gap-2">
             <MapPin className="size-4 mt-0.5 shrink-0" /> {ADDRESS}
           </a>
         </div>
@@ -488,5 +481,81 @@ function Footer() {
         © {new Date().getFullYear()} Trendy Royal Hotel & Lounge. Where every guest is treated like royalty.
       </div>
     </footer>
+  );
+}
+
+function SocialLinks() {
+  const socials = [
+    {
+      name: "Facebook",
+      href: FACEBOOK,
+      bg: "bg-[#1877F2]",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor" className="size-5"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+      ),
+    },
+    {
+      name: "WhatsApp",
+      href: WHATSAPP,
+      bg: "bg-[#25D366]",
+      icon: (
+        <svg viewBox="0 0 32 32" fill="currentColor" className="size-5"><path d="M19.11 17.21c-.27-.14-1.63-.8-1.88-.9-.25-.09-.44-.14-.62.14-.18.27-.7.9-.86 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.2-1.36-.81-.72-1.36-1.62-1.52-1.89-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.63-.66 1.86-1.31.23-.65.23-1.2.16-1.31-.07-.11-.25-.18-.52-.32zM16.02 5.33c-5.9 0-10.69 4.79-10.69 10.69 0 1.88.49 3.72 1.42 5.34L5 27l5.78-1.52a10.66 10.66 0 0 0 5.23 1.34h.01c5.9 0 10.69-4.79 10.69-10.69 0-2.85-1.11-5.54-3.13-7.55a10.62 10.62 0 0 0-7.56-3.25z"/></svg>
+      ),
+    },
+    {
+      name: "Instagram",
+      href: INSTAGRAM,
+      bg: "bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor" className="size-5"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 2.16c-3.14 0-3.51.01-4.75.07-.99.05-1.53.21-1.89.35-.47.18-.81.4-1.17.76-.36.36-.58.7-.76 1.17-.14.36-.3.9-.35 1.89-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05.99.21 1.53.35 1.89.18.47.4.81.76 1.17.36.36.7.58 1.17.76.36.14.9.3 1.89.35 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c.99-.05 1.53-.21 1.89-.35.47-.18.81-.4 1.17-.76.36-.36.58-.7.76-1.17.14-.36.3-.9.35-1.89.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-.99-.21-1.53-.35-1.89a3.15 3.15 0 0 0-.76-1.17 3.15 3.15 0 0 0-1.17-.76c-.36-.14-.9-.3-1.89-.35-1.24-.06-1.61-.07-4.75-.07zm0 3.68a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2.16a1.84 1.84 0 1 0 0 3.68 1.84 1.84 0 0 0 0-3.68zm5.08-2.4a.96.96 0 1 1 0-1.92.96.96 0 0 1 0 1.92z"/></svg>
+      ),
+    },
+    {
+      name: "TikTok",
+      href: TIKTOK,
+      bg: "bg-black",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor" className="size-5"><path d="M19.6 6.7a5.6 5.6 0 0 1-3.4-1.2 5.6 5.6 0 0 1-2.2-3.6h-3.3v13.4a2.6 2.6 0 1 1-1.9-2.5V9.4a5.9 5.9 0 1 0 5.2 5.8V9.4a8.9 8.9 0 0 0 5.6 1.9V8a5.6 5.6 0 0 1-0-1.3z"/></svg>
+      ),
+    },
+    {
+      name: "Google Maps",
+      href: MAPS,
+      bg: "bg-[#EA4335]",
+      icon: <MapPin className="size-5" strokeWidth={2.5} />,
+    },
+  ];
+  return (
+    <div className="mt-5 flex flex-wrap gap-4">
+      {socials.map((s) => (
+        <a
+          key={s.name}
+          href={s.href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={s.name}
+          className="flex flex-col items-center gap-1.5 group"
+        >
+          <span className={`size-11 rounded-full ${s.bg} text-white flex items-center justify-center shadow-md group-hover:scale-110 transition`}>
+            {s.icon}
+          </span>
+          <span className="text-[11px] font-bold text-foreground">{s.name}</span>
+        </a>
+      ))}
+    </div>
+  );
+}
+
+function FloatingWhatsApp() {
+  return (
+    <a
+      href={WHATSAPP}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp"
+      className="fixed bottom-5 right-5 z-50 size-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition animate-bounce"
+    >
+      <svg viewBox="0 0 32 32" fill="currentColor" className="size-7"><path d="M19.11 17.21c-.27-.14-1.63-.8-1.88-.9-.25-.09-.44-.14-.62.14-.18.27-.7.9-.86 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.2-1.36-.81-.72-1.36-1.62-1.52-1.89-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.63-.66 1.86-1.31.23-.65.23-1.2.16-1.31-.07-.11-.25-.18-.52-.32zM16.02 5.33c-5.9 0-10.69 4.79-10.69 10.69 0 1.88.49 3.72 1.42 5.34L5 27l5.78-1.52a10.66 10.66 0 0 0 5.23 1.34h.01c5.9 0 10.69-4.79 10.69-10.69 0-2.85-1.11-5.54-3.13-7.55a10.62 10.62 0 0 0-7.56-3.25z"/></svg>
+    </a>
   );
 }
