@@ -40,6 +40,8 @@ const PHONE_2 = "+2349162844419";
 const EMAIL = "Trendyroyalhotel@gmail.com";
 const WHATSAPP = "https://wa.me/9162844419";
 const FACEBOOK = "https://www.facebook.com/share/p/1VwsFMrh77/";
+const INSTAGRAM = "https://www.instagram.com/trendyroyalhotel/";
+const TIKTOK = "https://vt.tiktok.com/ZSQvQHcXu/";
 const MAPS = "https://maps.app.goo.gl/xZniCqkiSpGbDrKL7";
 const ADDRESS = "6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE";
 
@@ -55,6 +57,7 @@ function Index() {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
