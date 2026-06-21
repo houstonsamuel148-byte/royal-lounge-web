@@ -4,6 +4,7 @@ import {
   BedDouble, UtensilsCrossed, Wine, PartyPopper, ChefHat, Clock,
   Zap, Gamepad2, Wifi, ShieldCheck, Car, Sparkles, Phone, Mail,
   MapPin, MessageCircle, Facebook, Crown, Check, ChevronDown, Star,
+  Dumbbell, Waves,
 } from "lucide-react";
 import photo1 from "@/assets/trendy-royal-1.jpeg.asset.json";
 import photo2 from "@/assets/trendy-royal-2.jpeg.asset.json";
@@ -42,6 +43,7 @@ const WHATSAPP = "https://wa.me/9162844419";
 const FACEBOOK = "https://www.facebook.com/share/p/1VwsFMrh77/";
 const INSTAGRAM = "https://www.instagram.com/trendyroyalhotel/";
 const TIKTOK = "https://vt.tiktok.com/ZSQvQHcXu/";
+const TELEGRAM = "https://t.me/trendyroyalhotelandlounge";
 const MAPS = "https://maps.app.goo.gl/xZniCqkiSpGbDrKL7";
 const ADDRESS = "6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE";
 
@@ -208,6 +210,8 @@ const services = [
   { icon: PartyPopper, title: "Event Hosting", desc: "Birthdays, meetings and celebrations in our elegant event space." },
   { icon: Gamepad2, title: "Snooker & Games", desc: "Unwind with friends at our games lounge after a long day." },
   { icon: ChefHat, title: "Exquisite Cuisines", desc: "Barbecue nights, refreshments and chef's specials — every single day." },
+  { icon: Dumbbell, title: "Gym", desc: "Stay active with our modern fitness equipment and wellness facilities." },
+  { icon: Waves, title: "Swimming Pool", desc: "Take a refreshing dip in our clean, relaxing pool area." },
 ];
 
 function Services() {
@@ -516,6 +520,14 @@ function SocialLinks() {
       bg: "bg-black",
       icon: (
         <svg viewBox="0 0 24 24" fill="currentColor" className="size-5"><path d="M19.6 6.7a5.6 5.6 0 0 1-3.4-1.2 5.6 5.6 0 0 1-2.2-3.6h-3.3v13.4a2.6 2.6 0 1 1-1.9-2.5V9.4a5.9 5.9 0 1 0 5.2 5.8V9.4a8.9 8.9 0 0 0 5.6 1.9V8a5.6 5.6 0 0 1-0-1.3z"/></svg>
+      ),
+    },
+    {
+      name: "Telegram",
+      href: TELEGRAM,
+      bg: "bg-[#229ED9]",
+      icon: (
+        <svg viewBox="0 0 32 32" fill="currentColor" className="size-5"><path d="M28.631 6.068c-.4-.35-1-.45-1.5-.15L3.969 16.8c-.6.25-.95.9-.95 1.55s.35 1.3.95 1.55l6.55 2.4 2.4 8.5c.15.55.55.95 1.1 1.05h.25c.45 0 .85-.2 1.1-.55l4.15-4.25 6.55 4.85c.35.25.8.35 1.2.25.45-.1.8-.4 1-.8.2-.4.25-.85.1-1.3l-3.7-18.05c-.2-.55-.65-.95-1.2-1.1z"/></svg>
       ),
     },
     {
