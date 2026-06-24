@@ -19,6 +19,8 @@ import photo10 from "@/assets/gallery-10.jpg.asset.json";
 import photo11 from "@/assets/gallery-11.jpg.asset.json";
 import photo12 from "@/assets/gallery-12.jpg.asset.json";
 import photo13 from "@/assets/gallery-13.jpg.asset.json";
+import gaming1 from "@/assets/gaming-suite-1.jpeg.asset.json";
+import gaming2 from "@/assets/gaming-suite-2.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
@@ -40,9 +42,9 @@ const PHONE_1 = "+2347077132057";
 const PHONE_2 = "+2349162844419";
 const EMAIL = "Trendyroyalhotel@gmail.com";
 const WHATSAPP = "https://wa.me/9162844419";
-const FACEBOOK = "https://www.facebook.com/share/p/1VwsFMrh77/";
+const FACEBOOK = "https://www.facebook.com/share/1LVhrjKaS4/";
 const INSTAGRAM = "https://www.instagram.com/trendyroyalhotel/";
-const TIKTOK = "https://vt.tiktok.com/ZSQvQHcXu/";
+const TIKTOK = "https://www.tiktok.com/@trendyroyalhotel?_r=1&_t=ZS-97TaFcPwqMj";
 const TELEGRAM = "https://t.me/trendyroyalhotelandlounge";
 const MAPS = "https://maps.app.goo.gl/xZniCqkiSpGbDrKL7";
 const ADDRESS = "6, IDOWU OGUNSANYA STREET, IBARA JUNCTION, SOMEFUN, ADIYAN GASLINE";
@@ -356,9 +358,12 @@ const galleryItems = [
   { src: photo11.url, alt: "Trendy Royal rooms showcase", cls: "aspect-square" },
   { src: photo12.url, alt: "Trendy Royal executive room", cls: "aspect-square" },
   { src: photo13.url, alt: "Trendy Royal comfort", cls: "aspect-square" },
+  { src: gaming1.url, alt: "Trendy Royal Gaming Suite", cls: "aspect-square" },
+  { src: gaming2.url, alt: "Trendy Royal Gaming Lounge", cls: "aspect-square" },
 ];
 
 function Gallery() {
+  const [lightbox, setLightbox] = useState<number | null>(null);
   return (
     <section id="gallery" className="py-24 bg-royal">
       <div className="mx-auto max-w-7xl px-5">
@@ -367,15 +372,57 @@ function Gallery() {
           <h2 className="mt-2 text-4xl md:text-5xl font-display font-semibold">
             A glimpse inside the <span className="text-gradient-gold italic">experience</span>
           </h2>
+          <p className="mt-3 text-sm text-muted-foreground">Tap any photo to view full size.</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {galleryItems.map((g, i) => (
-            <div key={i} className={`overflow-hidden rounded-2xl border border-border bg-card ${g.cls}`}>
-              <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1024} className="size-full object-cover hover:scale-105 transition duration-700" />
-            </div>
+            <button
+              type="button"
+              key={i}
+              onClick={() => setLightbox(i)}
+              className={`group relative overflow-hidden rounded-2xl border border-border bg-card cursor-zoom-in ${g.cls}`}
+            >
+              <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1024} className="size-full object-cover group-hover:scale-105 transition duration-700" />
+              <span className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <span className="rounded-full bg-white/90 text-foreground px-3 py-1 text-xs font-medium">View</span>
+              </span>
+            </button>
           ))}
         </div>
       </div>
+      {lightbox !== null && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setLightbox(null)}
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 animate-in fade-in"
+        >
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            aria-label="Close"
+            className="absolute top-4 right-4 size-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-2xl"
+          >×</button>
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox - 1 + galleryItems.length) % galleryItems.length); }}
+            aria-label="Previous"
+            className="absolute left-4 size-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-2xl"
+          >‹</button>
+          <img
+            src={galleryItems[lightbox].src}
+            alt={galleryItems[lightbox].alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[90vh] max-w-[90vw] object-contain rounded-xl shadow-2xl"
+          />
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox + 1) % galleryItems.length); }}
+            aria-label="Next"
+            className="absolute right-4 size-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-2xl"
+          >›</button>
+        </div>
+      )}
     </section>
   );
 }
