@@ -4,7 +4,7 @@ import {
   BedDouble, UtensilsCrossed, Wine, PartyPopper, ChefHat, Clock,
   Zap, Gamepad2, Wifi, ShieldCheck, Car, Sparkles, Phone, Mail,
   MapPin, MessageCircle, Facebook, Crown, Check, ChevronDown, Star,
-  Dumbbell, Waves,
+  Dumbbell, Waves, Tv, Music,
 } from "lucide-react";
 import photo1 from "@/assets/trendy-royal-1.jpeg.asset.json";
 import photo2 from "@/assets/trendy-royal-2.jpeg.asset.json";
@@ -21,6 +21,10 @@ import photo12 from "@/assets/gallery-12.jpg.asset.json";
 import photo13 from "@/assets/gallery-13.jpg.asset.json";
 import gaming1 from "@/assets/gaming-suite-1.jpeg.asset.json";
 import gaming2 from "@/assets/gaming-suite-2.jpeg.asset.json";
+import gymCentre from "@/assets/gym-centre.jpeg.asset.json";
+import shawarma from "@/assets/shawarma.jpeg.asset.json";
+import restaurantMenu from "@/assets/restaurant-menu.jpeg.asset.json";
+import steakDeal from "@/assets/steak-deal.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
@@ -207,10 +211,10 @@ function ContactForm() {
 
 const services = [
   { icon: BedDouble, title: "Luxury Rooms", desc: "Tastefully furnished, fully air-conditioned rooms designed for absolute comfort." },
-  { icon: UtensilsCrossed, title: "Fine Dining", desc: "Exquisite local and continental cuisine prepared by our expert chefs." },
-  { icon: Wine, title: "VIP Lounge & Bar", desc: "Premium drinks, signature cocktails and a relaxing nightlife atmosphere." },
-  { icon: PartyPopper, title: "Event Hosting", desc: "Birthdays, meetings and celebrations in our elegant event space." },
-  { icon: Gamepad2, title: "Snooker & Games", desc: "Unwind with friends at our games lounge after a long day." },
+  { icon: UtensilsCrossed, title: "Restaurant, Bar & Fine Dining", desc: "Exquisite local and continental cuisine, premium drinks and signature cocktails in an elegant setting." },
+  { icon: Music, title: "Live Events & Shows", desc: "Live performances, birthdays, meetings and celebrations hosted in our vibrant event space." },
+  { icon: Gamepad2, title: "Games & Recreational Activities", desc: "Snooker, indoor games and recreational fun to unwind with friends and family." },
+  { icon: Tv, title: "Live Sport Streaming", desc: "Catch every match live on big screens with crystal-clear picture and electrifying atmosphere." },
   { icon: ChefHat, title: "Exquisite Cuisines", desc: "Barbecue nights, refreshments and chef's specials — every single day." },
   { icon: Dumbbell, title: "Gym", desc: "Stay active with our modern fitness equipment and wellness facilities." },
   { icon: Waves, title: "Swimming Pool", desc: "Take a refreshing dip in our clean, relaxing pool area." },
@@ -360,6 +364,10 @@ const galleryItems = [
   { src: photo13.url, alt: "Trendy Royal comfort", cls: "aspect-square" },
   { src: gaming1.url, alt: "Trendy Royal Gaming Suite", cls: "aspect-square" },
   { src: gaming2.url, alt: "Trendy Royal Gaming Lounge", cls: "aspect-square" },
+  { src: gymCentre.url, alt: "Trendy Royal Gym Centre", cls: "aspect-square" },
+  { src: restaurantMenu.url, alt: "Trendy Royal Restaurant Menu", cls: "aspect-square" },
+  { src: shawarma.url, alt: "Super Delicious Shawarma — Free Home Delivery", cls: "aspect-square" },
+  { src: steakDeal.url, alt: "Special Best Deals — Steak", cls: "aspect-square" },
 ];
 
 function Gallery() {
