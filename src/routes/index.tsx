@@ -21,6 +21,8 @@ import photo12 from "@/assets/gallery-12.jpg.asset.json";
 import photo13 from "@/assets/gallery-13.jpg.asset.json";
 import gaming1 from "@/assets/gaming-suite-1.jpeg.asset.json";
 import gaming2 from "@/assets/gaming-suite-2.jpeg.asset.json";
+import gym1 from "@/assets/gym-1.jpeg.asset.json";
+import gym2 from "@/assets/gym-2.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
@@ -360,6 +362,8 @@ const galleryItems = [
   { src: photo13.url, alt: "Trendy Royal comfort", cls: "aspect-square" },
   { src: gaming1.url, alt: "Trendy Royal Gaming Suite", cls: "aspect-square" },
   { src: gaming2.url, alt: "Trendy Royal Gaming Lounge", cls: "aspect-square" },
+  { src: gym1.url, alt: "Trendy Royal Gym Centre", cls: "aspect-square" },
+  { src: gym2.url, alt: "Trendy Royal Gym Centre interior", cls: "aspect-square" },
 ];
 
 function Gallery() {
