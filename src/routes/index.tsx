@@ -19,8 +19,8 @@ import photo10 from "@/assets/gallery-10.jpg.asset.json";
 import photo11 from "@/assets/gallery-11.jpg.asset.json";
 import photo12 from "@/assets/gallery-12.jpg.asset.json";
 import photo13 from "@/assets/gallery-13.jpg.asset.json";
-import gaming1 from "@/assets/gaming-suite-1.jpeg.asset.json";
-import gaming2 from "@/assets/gaming-suite-2.jpeg.asset.json";
+import gaming1 from "@/assets/games-centre-1.jpeg.asset.json";
+import gaming2 from "@/assets/games-centre-2.jpeg.asset.json";
 import gymCentre from "@/assets/gym-centre.jpeg.asset.json";
 import shawarma from "@/assets/shawarma.jpeg.asset.json";
 import restaurantMenu from "@/assets/restaurant-menu.jpeg.asset.json";
@@ -363,8 +363,8 @@ const galleryItems = [
   { src: photo11.url, alt: "Trendy Royal rooms showcase", cls: "aspect-square" },
   { src: photo12.url, alt: "Trendy Royal executive room", cls: "aspect-square" },
   { src: photo13.url, alt: "Trendy Royal comfort", cls: "aspect-square" },
-  { src: gaming1.url, alt: "Trendy Royal Gaming Suite", cls: "aspect-square" },
-  { src: gaming2.url, alt: "Trendy Royal Gaming Lounge", cls: "aspect-square" },
+  { src: gaming1.url, alt: "Trendy Royal Games Centre", cls: "aspect-square" },
+  { src: gaming2.url, alt: "Trendy Royal Games Centre Lounge", cls: "aspect-square" },
   { src: gymCentre.url, alt: "Trendy Royal Gym Centre", cls: "aspect-square" },
   { src: restaurantMenu.url, alt: "Trendy Royal Restaurant Menu", cls: "aspect-square" },
   { src: shawarma.url, alt: "Super Delicious Shawarma — Free Home Delivery", cls: "aspect-square" },
