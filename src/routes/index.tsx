@@ -26,7 +26,6 @@ import shawarma from "@/assets/shawarma.jpeg.asset.json";
 import restaurantMenu from "@/assets/restaurant-menu.jpeg.asset.json";
 import steakDeal from "@/assets/steak-deal.jpeg.asset.json";
 import chipsChickenPromo from "@/assets/chips-chicken-promo.jpeg.asset.json";
-import stay10NightsPromo from "@/assets/stay-10-nights-promo.jpeg.asset.json";
 import roomStandard from "@/assets/room-standard.jpeg.asset.json";
 import roomExecutive from "@/assets/room-executive.jpeg.asset.json";
 import roomPlatinum from "@/assets/room-platinum.jpeg.asset.json";
@@ -371,7 +370,6 @@ const galleryItems = [
   { src: shawarma.url, alt: "Super Delicious Shawarma — Free Home Delivery", cls: "aspect-square" },
   { src: steakDeal.url, alt: "Special Best Deals — Steak", cls: "aspect-square" },
   { src: chipsChickenPromo.url, alt: "Chips & Chicken — Delicious and Tasty, 50% Discount", cls: "aspect-square" },
-  { src: stay10NightsPromo.url, alt: "Pay for 10 Nights and Get One Free — Trendy Royal Hotel", cls: "aspect-square" },
 ];
 
 function Gallery() {
