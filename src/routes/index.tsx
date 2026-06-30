@@ -19,6 +19,7 @@ import photo10 from "@/assets/gallery-10.jpg.asset.json";
 import photo11 from "@/assets/gallery-11.jpg.asset.json";
 import photo12 from "@/assets/gallery-12.jpg.asset.json";
 import photo13 from "@/assets/gallery-13.jpg.asset.json";
+import gamersGatePromo from "@/assets/gamers-gate-promo.jpeg.asset.json";
 import gaming1 from "@/assets/games-centre-1.jpeg.asset.json";
 import gaming2 from "@/assets/games-centre-2.jpeg.asset.json";
 import gymCentre from "@/assets/gym-centre.jpeg.asset.json";
@@ -370,6 +371,7 @@ const galleryItems = [
   { src: shawarma.url, alt: "Super Delicious Shawarma — Free Home Delivery", cls: "aspect-square" },
   { src: steakDeal.url, alt: "Special Best Deals — Steak", cls: "aspect-square" },
   { src: chipsChickenPromo.url, alt: "Chips & Chicken — Delicious and Tasty, 50% Discount", cls: "aspect-square" },
+  { src: gamersGatePromo.url, alt: "Gamers Gate — PS5, PS4 & Snooker at Trendy Royal Games Centre", cls: "aspect-square" },
 ];
 
 function Gallery() {
