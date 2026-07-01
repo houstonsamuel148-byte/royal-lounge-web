@@ -1,6 +1,9 @@
 [build]
   command = "npm run build"
-  publish = "dist/client"
+  publish = "dist"
+
+[functions]
+  directory = ".netlify/functions-internal"
 
 [dev]
   command = "vite dev"
